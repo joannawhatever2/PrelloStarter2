@@ -1,0 +1,68 @@
+﻿
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<br />
+<h2 class="custom-text">Update Project:</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+    <form method="post" asp-action="Edit">
+        <input type="hidden"  />
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label ></label>
+            </div>
+            <div class="col-6">
+                <input  class="form-control" />
+            </div>
+            <span class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label ></label>
+            </div>
+            <div class="col-6">
+                <input class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label ></label>
+            </div>
+            <select class="col-6" >
+                <option value="">Select a status</option>
+                <option value="Not Started"> Not Started </option>
+                <option value="In Progress">In Progress </option>
+                <option value="Complete">Complete</option>
+            </select>
+            <span  class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label ></label>
+            </div>
+            <div class="col-6">
+                <input  class="form-control" />
+            </div>
+            <span  class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="Update" class="btn btn-info form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-action="Index" class="btn btn-secondary form-control">Back to Projects List</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
