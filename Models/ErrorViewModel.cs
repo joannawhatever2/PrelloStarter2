@@ -1,4 +1,4 @@
-namespace PrelloStarter2.Models
+namespace PrelloStarter3.Models
 {
     public class ErrorViewModel
     {

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace PrelloStarter2.Migrations
+namespace PrelloStarter3.Migrations
 {
     /// <inheritdoc />
     public partial class _123asdf : Migration

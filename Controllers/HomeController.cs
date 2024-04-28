@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using PrelloStarter2.Models;
+using PrelloStarter3.Models;
 using System.Diagnostics;
 
-namespace PrelloStarter2.Controllers
+namespace PrelloStarter3.Controllers
 {
     public class HomeController : Controller
     {

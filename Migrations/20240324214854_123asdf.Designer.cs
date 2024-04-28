@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PrelloStarter2.Models;
+using PrelloStarter3.Models;
 
 #nullable disable
 
-namespace PrelloStarter2.Migrations
+namespace PrelloStarter3.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20240324214854_123asdf")]
@@ -20,7 +20,7 @@ namespace PrelloStarter2.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.3");
 
-            modelBuilder.Entity("PrelloStarter2.Models.Client", b =>
+            modelBuilder.Entity("PrelloStarter3.Models.Client", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -39,7 +39,7 @@ namespace PrelloStarter2.Migrations
                     b.ToTable("Clients");
                 });
 
-            modelBuilder.Entity("PrelloStarter2.Models.Project", b =>
+            modelBuilder.Entity("PrelloStarter3.Models.Project", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
